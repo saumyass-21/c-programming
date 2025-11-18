@@ -2,18 +2,24 @@
 
 int main() 
 {
-int n;
+int n, i;
 float sum = 0.0;
+int numer, denom;
 printf("Enter the number of terms: ");
 scanf("%d", &n);
-sum += 1.0;
-int num = 3, denom = 4;
-for (int i = 2; i <= n; i++) 
-    {
-        sum += (float)num / denom;
-        num += 2;
-        denom += 2;
+for (i = 1; i <= n; i++) 
+   {
+        numer = 2 * i - 1;
+        if (i == 1) 
+        {
+            sum += 1;
+        } else 
+        {
+            denom = 2 * i;
+            sum += (float)numer / denom;
+        }
     }
-printf("Sum of the series up to %d terms = %.4f\n", n, sum);
+printf("%.2f\n", sum);
 return 0;
 }
+

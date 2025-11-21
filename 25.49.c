@@ -2,13 +2,14 @@
 
 int main() 
 {
-int i, j;
+int i, j, b;
 int n;
-printf("Enter the number of rows: ");
+printf("enter the number of rows: ");
 scanf("%d", &n);
 for (i = 1; i <= n; i++) 
     {
-        for (j = 1; j <= i; j++) 
+        b = n - i + 1;
+        for (j = b; j <= n; j++) 
         {
             printf("%d", j);
         }

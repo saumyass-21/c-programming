@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+enum status { SUCCESS, FAILURE, TIMEOUT };
+
+int main()
+{
+    printf("SUCCESS=%d, FAILURE=%d, TIMEOUT=%d\n", SUCCESS, FAILURE, TIMEOUT);
+    return 0;
+}
